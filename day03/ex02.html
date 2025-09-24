@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        숫자입력
+    </h1>
+    <div>
+        <input id="inp-num"type="number" value="0"/>
+        <button id="btn-ok">ok</button>
+
+
+    </div>
+    <p id="output"> 선택한 번호: </p>
+    <script>
+        var btn = document.getElementById("btn-ok");
+        var input = document.getElementById("inp-num");
+        var output = document.getElementById("output");
+
+       
+        btn.addEventListener("click", function() {
+            var num = input.value; 
+            output.textContent = "선택한 번호: " + num;
+        });
+    </script>
+
+</body>
+</html>
