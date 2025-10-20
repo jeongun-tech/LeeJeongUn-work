@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>가고 싶은 도시를 선택</h1>
+    <div>
+        <select id="sel-city">
+            <option value="서울"selected>서울</option>
+            <option value="전주">전주</option>
+            <option value="부산">부산</option>
+        </select>
+    </div>
+    <p id="result"></p>
+    <button id ="select">선택</button>
+    <script>
+        var Selcity = document.getElementById("sel-city")
+        var Result = document.getElementById("result")
+        var Select = document.getElementById("select")
+        Select.addEventListener('click', ()=>{
+            console.log(Selcity.value)
+            Result.innerText = Selcity.value + "행 열차 입니다."
+        })
+
+
+    </script>
+</body>
+</html>

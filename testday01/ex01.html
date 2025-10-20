@@ -9,11 +9,13 @@
     <h1 id = "counter.output">counter : 0</h1>
     <button id="btn-inc">Inc</button>
     <button id="btn-dec">Dec</button>
+    <button id="reset">RESET</button>
 
     <script>
         var counterOutput = document.getElementById("counter.output")
         var btnInc = document.getElementById("btn-inc")
         var btnDec = document.getElementById("btn-dec")
+        var Reset = document.getElementById("reset")
         var counter = 0
         btnInc.addEventListener('click',()=> {
             console.log('click test')
@@ -22,6 +24,10 @@
         })
          btnDec.addEventListener('click', () => {
             counter = counter - 1
+            counterOutput.innerText = "counter : " + counter
+        })
+        Reset.addEventListener('click', ()=>{
+            counter = 0
             counterOutput.innerText = "counter : " + counter
         })
     </script>

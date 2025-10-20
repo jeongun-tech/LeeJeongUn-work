@@ -6,25 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id = "counter.output">counter : 0</h1>
+    <h1 id="counter.out">counter :0</h1>
     <button id="btn-inc">Inc</button>
     <button id="btn-dec">Dec</button>
 
     <script>
-        var counterOutput = document.getElementById("counter.output")
+        var counterOutput = document.getElementById("counter.out")
         var btnInc = document.getElementById("btn-inc")
         var btnDec = document.getElementById("btn-dec")
         var counter = 0
-        btnInc.addEventListener('click',()=> {
+        btnInc.addEventListener('click',()=>{
             console.log('click test')
             counter = counter + 1
-            counterOutput.innerText = "counter :" + counter
+            counterOutput.innerText = "counter :"+counter
         })
-         btnDec.addEventListener('click', () => {
+        btnDec.addEventListener('click',()=>{
             counter = counter - 1
-            counterOutput.innerText = "counter : " + counter
+            counterOutput.innerText = "counter :"+counter
         })
     </script>
-
 </body>
 </html>
